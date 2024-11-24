@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Dark mode -->
+    <style name="Base.Theme.StoryApps" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <item name="colorPrimary">@color/button</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.StoryApps" parent="Base.Theme.StoryApps" />
+</resources>

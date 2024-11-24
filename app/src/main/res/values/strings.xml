@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StoryApps</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Lengkapi Data Dirimu Di Bawah Ini Ya</string>
+    <string name="login">Sudah siap untuk berbagi cerita?</string>
+    <string name="deskripsiapps">Mau berbagi ilmu Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di StoryApps aja!</string>
+    <string name="signup">masukan data diri kamu</string>
+</resources>

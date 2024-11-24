@@ -1,0 +1,53 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.storyapps.view.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.storyapps.view.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.storyapps.view.SignupFragment"
+        tools:layout="@layout/fragment_signup" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.storyapps.view.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_addStoryFragment"
+            app:destination="@id/addStoryFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:popUpTo="@id/dashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStoryFragment"
+        android:name="com.example.storyapps.view.AddStoryFragment"
+        tools:layout="@layout/fragment_add_story" />
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.storyapps.view.MapsFragment"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.storyapps.view.DetailStoryFragment"
+        android:label="Detail Fragment">
+        <argument
+            android:name="storyId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
